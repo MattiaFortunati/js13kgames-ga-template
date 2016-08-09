@@ -3,12 +3,9 @@ module.exports = function (grunt) {
   grunt.initConfig({
      pkg: grunt.file.readJSON('package.json'),
      uglify: {
-       options: {
-         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-       },
        build: {
         files: {
-          'dist/testgame.min.js': ['src/js/*.js']
+          'dist/testgame.min.js': ['src/js/ga.js','src/js/custom.js','src/js/game.js']
         }
         }
      },
@@ -21,7 +18,7 @@ module.exports = function (grunt) {
            }
          },
          files: {
-           'dist/index.min.html': ['src/index.html']
+           'dist/index.min.html': ['src/production.html']
          }
        }
      },

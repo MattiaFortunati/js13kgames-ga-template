@@ -1,4 +1,4 @@
-Simple Grunt template for js13kgames competition.
+Simple Ga-Grunt game template for js13kgames competition.
 
 It uses the Ga framework: https://github.com/kittykatattack/ga
 more precisely its bouncing ball example.
